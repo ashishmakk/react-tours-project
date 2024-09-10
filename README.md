@@ -1,8 +1,9 @@
 ## React Tours Project
 
-### Project URL: https://react-tours-project-112.netlify.app/
+**Project URL:** 
+https://react-tours-project-112.netlify.app/
 
-### Key Features:
+**Key Features:**
 
 - Fetching tour data from external source/URL.
 - Map over tour array and render components for each tour.
