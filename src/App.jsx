@@ -24,6 +24,12 @@ function App() {
     setIsLoading(false);
   };
 
+  const removeTour = (id) => {
+    const updatedTours = tours.filter((item) => item.id !== id);
+
+    return setTours(updatedTours);
+  };
+
   useEffect(() => {
     fetchTours();
   }, []);
@@ -36,9 +42,20 @@ function App() {
     );
   }
 
+  if (tours.length === 0) {
+    return (
+      <main>
+        <h1>No tours left to show</h1>
+        <button className='btn' type='button' onClick={() => fetchTours()}>
+          Refresh
+        </button>
+      </main>
+    );
+  }
+
   return (
     <main>
-      <Tours tours={tours} />
+      <Tours tours={tours} removeTour={removeTour} />
     </main>
   );
 }
