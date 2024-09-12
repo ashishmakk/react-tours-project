@@ -5,10 +5,10 @@ https://react-tours-project-112.netlify.app/
 
 **Key Features:**
 
-- Fetching tour data from external source/URL.
+- Fetching tour data from external source/API.
 - Map over tour array and render components for each tour.
 - Filtering tours with the use of 'Remove tour' button (by updating React state).
-- Re-fetching all tours data from external source/URL.
+- Re-fetching all tours data from external source/API.
 
 <a href='https://react-tours-project-112.netlify.app/' target='_blank'>
 <img src='./src/assets/tours.jpg' width='700' alt='tours project image'>
